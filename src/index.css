@@ -1,0 +1,22 @@
+
+   .App {
+    text-align: center;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .App-header {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+  }
+  * {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  input{
+    width: 25%;
+  }
+
