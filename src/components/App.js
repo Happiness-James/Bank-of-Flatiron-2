@@ -10,9 +10,9 @@ function App() {
 
 	const fetchTransactions = async () => {
 		try {
-			const res = await fetch("http://localhost:3001/transactions");
+			const res = await fetch("https://happiness-james.github.io/bank-of-flatiron.json")
 			const jsonRes = await res.json();
-			setTransactions(jsonRes);
+			setTransactions(jsonRes.transactions);
 		} catch (error) {
 			console.log(error);
 		}
