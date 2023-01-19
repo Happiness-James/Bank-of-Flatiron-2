@@ -10,9 +10,9 @@ function App() {
 
 	const fetchTransactions = async () => {
 		try {
-			const res = await fetch("https://happiness-james.github.io/bank-of-flatiron.json")
+			const res = await fetch("https://transaction-api-305b.onrender.com/transactions")
 			const jsonRes = await res.json();
-			setTransactions(jsonRes.transactions);
+			setTransactions(jsonRes);
 		} catch (error) {
 			console.log(error);
 		}

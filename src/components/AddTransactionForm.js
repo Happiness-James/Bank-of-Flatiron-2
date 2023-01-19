@@ -11,7 +11,7 @@ function AddTransactionForm({ handleAddTransaction }) {
 		e.preventDefault();
 		console.log(formData);
 		try {
-			const res = await fetch("http://localhost:3001/transactions", {
+			const res = await fetch("https://transaction-api-305b.onrender.com/transactions", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

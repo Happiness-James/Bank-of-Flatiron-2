@@ -5,7 +5,7 @@ function TransactionsList({ transactions, handleDeleteTransaction }) {
 	const deleteTransaction = async (transId) => {
 		console.log(transId);
 		try {
-			const res = await fetch("http://localhost:3001/transactions/" + transId, {
+			const res = await fetch("https://transaction-api-305b.onrender.com/transactions" + transId, {
 				method: "DELETE",
 			});
 			handleDeleteTransaction(transId);
